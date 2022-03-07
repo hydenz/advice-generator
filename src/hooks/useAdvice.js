@@ -9,7 +9,9 @@ function useAdvice() {
 
   const fetchNewAdvice = async () => {
     setIsLoading(true);
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const response = await fetch("https://api.adviceslip.com/advice", {
+      cache: "no-store",
+    });
     const responseBody = await response.json();
 
     const newAdvice = {
