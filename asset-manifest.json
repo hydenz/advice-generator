@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18ce01c9.css",
+    "main.js": "/static/js/main.f25d98aa.js",
+    "index.html": "/index.html",
+    "static/media/icon-dice.svg": "/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
+    "static/media/pattern-divider-desktop.svg": "/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
+    "static/media/pattern-divider-mobile.svg": "/static/media/pattern-divider-mobile.aca38726412164df099c43d4f2fed72e.svg",
+    "main.18ce01c9.css.map": "/static/css/main.18ce01c9.css.map",
+    "main.f25d98aa.js.map": "/static/js/main.f25d98aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18ce01c9.css",
+    "static/js/main.f25d98aa.js"
+  ]
+}
