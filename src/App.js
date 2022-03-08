@@ -14,8 +14,8 @@ function App() {
         {isLoading ? <Loading /> : <q className="advice">{advice.text}</q>}
       </div>
       <picture className="divider">
-        <source srcset={DividerMobile} media="(max-width: 375px)" />
-        <source srcset={DividerDesktop} media="(min-width: 800px)" />
+        <source srcSet={DividerMobile} media="(max-width: 375px)" />
+        <source srcSet={DividerDesktop} media="(min-width: 800px)" />
         <img src={DividerMobile} alt="" />
       </picture>
       <button className="dice-container" onClick={fetchNewAdvice}>
