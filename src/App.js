@@ -5,13 +5,22 @@ import useAdvice from "./hooks/useAdvice";
 import Loading from "./Loading";
 
 function App() {
-  const { advice, isLoading, fetchNewAdvice } = useAdvice();
+  const { advice, isLoading, error, fetchNewAdvice } = useAdvice();
 
   return (
     <div className="box">
-      <span className="advice-num">Advice #{isLoading ? "?" : advice.id}</span>
+      <span className="advice-num">
+        Advice #{error || isLoading ? "?" : advice.id}
+      </span>
       <div className="advice-container">
-        {isLoading ? <Loading /> : <q className="advice">{advice.text}</q>}
+        {isLoading && <Loading />}
+        {error && !isLoading && (
+          <span className="advice">
+            An error ocourred while trying to fetch an advice, please try again
+            later.
+          </span>
+        )}
+        {!error && !isLoading && <q className="advice">{advice.text}</q>}
       </div>
       <picture className="divider">
         <source srcSet={DividerMobile} media="(max-width: 375px)" />
